@@ -4,7 +4,7 @@ import math
 import sys
 
 """ENTER YOUR UF-ID BELOW"""
-rng_seed = 12345678
+rng_seed = 90250297
 
 random.seed(rng_seed)
 
@@ -45,7 +45,7 @@ while running:
         pos = (WIDTH//2 + int(200*math.cos(theta)), HEIGHT//2 + int(200*math.sin(theta)))
         theta += math.pi/6
         pygame.draw.circle(screen, COLORS[i], pos, 30)  # Draw the edge dots
-    pygame.draw.line(screen, COLORS[12], (WIDTH // 2, HEIGHT // 2), LINE_END, 30) # Draw the hand
+    pygame.draw.line(screen, COLORS[12], (WIDTH // 2, HEIGHT // 2), LINE_END, 30)  # Draw the hand
     pygame.draw.circle(screen, COLORS[13], (WIDTH//2, HEIGHT//2), 50)  # Draw a blue circle (dot) in the center
     pygame.display.flip()  # Update the display
 
